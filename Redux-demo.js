@@ -21,5 +21,8 @@ const counterSubscriber = ()=>{
 }
 
 store.subscribe(counterSubscriber)
-store.dispatch({type: 'increment'})
+for (let i = 0; i < 5; i++) {
+    store.dispatch({ type: 'increment' });
+}
+
 store.dispatch({type: 'decrement'})
